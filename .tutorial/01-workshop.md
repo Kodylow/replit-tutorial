@@ -12,9 +12,7 @@ It'll be EXTREMELY helpful if you send me (`@kody` on Replit) a multiplayer link
 
 ## Step by Step Guide for Making a Replit Tutorial
 
-###  (Additional Info for each Step Available in the following slides of this tutorial)
-
-#### Part 1: Setting up the Code
+### Part 1: Setting up the Code
 
 1. Start with a working final project, completed code, or whatever the ending version of the code is as a github repo.
 2. Import the project as a Repl (replit will autoID the required dependencies) or make a new Repl `https://replit.com/new` in the primary language your project will be then clone it down using the `git` command line tools.
@@ -42,11 +40,26 @@ It'll be EXTREMELY helpful if you send me (`@kody` on Replit) a multiplayer link
 9. Change the RUN command again in the `.replit` file to run the tutorial solution. This is very important because the Preview screen for the tutorial allows the user to hit RUN, and you want that to show what the FINAL version of the code will do not the starter version which will probably throw an error.
     - I've also found it useful to make some modifications to the solution's RUN to print out something like "Fork this repl to get started!" or "Fork this Repl to learn to build me!" for getting people to actually do your tutorial.
 
-#### Part 2: Doing it live! (and embedding the video)
+### Part 2: Doing it live! (and embedding the video)
 
 After you've got the tutorial working the way you want, I recommend you try to run through the whole thing yourself. There'll probably be some bugs you'll find and address.
 
 You're now ready to run your workshop! We'll be recording the workshops so if it goes well and you like how it went we'll just use that. If you run into a snag or just would prefer to make a more formal, prerecorded video that works great to and we'll use that! Think of the live workshop as more of a "We'll do it live!" where we WANT to play, debug, interact with the audience, and find issues. Then afterward you can record a final video (if you want) methodically doing the tutorial as intended.
+
+To actually put the video into the replit tutorial:
+
+1. Upload the video to youtube.
+2. Get the `embedUrl` link.
+3. Create a `video.json` file in `.tutorial` dir 
+
+and populate the `video.json` file with:
+```
+{
+    "embedUrl": "https://youtu.be/embedvideourl"
+}
+```
+
+and that's it! Refresh the repl and you should see that the tutorial video pops open as well as the markdown tutorial!
 
 ### Thank you so much for doing this, we really appreciate your help and work to make this hackathon a success!
 
